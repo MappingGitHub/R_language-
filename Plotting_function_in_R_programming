@@ -1,0 +1,7 @@
+
+curve <-function (expr,from,to){
+    x <- seq(from,to,length=500)
+    y <- eval(substitute(expr))
+    plot(x,y,type="1")
+}
+curve(x^2-1,-2,2)
